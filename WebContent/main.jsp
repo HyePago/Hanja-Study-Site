@@ -9,7 +9,7 @@
 </head>
 <body id="main_body">
 	<%
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("euc-kr");
 	
 		String ContentPage = request.getParameter("CONTENTPAGE"); 
 	%>

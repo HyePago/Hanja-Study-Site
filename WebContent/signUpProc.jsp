@@ -37,7 +37,7 @@
 					out.println("<script>location.href='index.jsp'</script>");
 					break;
 				} else {
-					out.println("<script>alert('아이디 또는 비밀번호를 다시 한 번 확인해주세요.');location.href='index.jsp';</script>");
+					out.println("<script>location.href='index.jsp'</script>");
 				}
 			}
 		} catch (Exception e){

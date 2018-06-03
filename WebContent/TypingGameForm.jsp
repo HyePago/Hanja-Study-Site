@@ -62,11 +62,14 @@
 			</div>
 			<div width="120px" style="background-color: red; width: 200px; border: 1px solid #bbb;" id="hp_bar">&nbsp;
 			</div> 
+			<div>
+				<input type="button" value="랭크 보기" onclick="location.href='TypingGameResultView.jsp'">
+			</div>
 		</div>
 	</div>
 	<script>
 		var movTime = 500; //단어 움직임
-		var makeTime = 3000; //화면에 단어가 만들어지는 시간 차이
+		var makeTime = 2500; //화면에 단어가 만들어지는 시간 차이
 		var endCnt = 0;
 		
 		var hanjaQuestion = new Array();
@@ -120,7 +123,7 @@
 					hp_bar.style.width = parseInt(hp_bar.style.width) - 50 +"px";
 					if(parseInt(hp_bar.style.width) == 0){
 						// 화면 이동
-						location.href="TypingGameProc.jsp?score="+parseInt(result_answer.value);
+						location.href="TypingGameResult.jsp?score="+parseInt(result_answer.value);
 					}
 				}	
 			}

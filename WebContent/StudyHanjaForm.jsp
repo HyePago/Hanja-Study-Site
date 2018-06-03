@@ -31,16 +31,16 @@
 							bool = true;
 							continue;
 						}
-						
-						if(i%4 == 0){
-							%>
-							<tr>
-							<%
-						} else if(i%5 == 4){
+						if(i%4 == 0 && i != 0){
 							%>
 							</tr>
 							<%
 						}
+						if(i%4 == 0){
+							%>
+							<tr>
+							<%
+						} 
 						
 						String[] info = str.split("\t");
 						String[] pronunciation_info = info[1].split(",");
